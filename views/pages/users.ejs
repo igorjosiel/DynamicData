@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header.ejs'); %>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/users.css">
+</head>
+<body>
+    <%- include('../partials/navigation.ejs'); %>
+
+    <div class="spacing">
+        <% if(users.length > 0) {%>
+            <h1>Usuários</h1>
+
+            <ul class="list-group">
+                <% for(var i=0; i<users.length; i++) {%>
+                    <li class="list-group-item"><%= users[i] %></li>
+                <% } %>
+            </ul>
+        <% } else {%>
+            <h1>Nenhum usuário inserido!</h1>
+        <% } %>
+    </div>
+
+    <%- include('../partials/footer.ejs'); %>
+<%- include('../partials/endDocument.ejs'); %>

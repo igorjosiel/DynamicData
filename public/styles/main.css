@@ -1,0 +1,36 @@
+h1 {
+    font-size: 20px;
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spacing {
+    margin: 30px 10%;
+}
+
+.title-card {
+    color: white;
+    background-color: blue;
+}
+
+.title-error {
+    color: red;
+    font-weight: bold;
+}
+
+.link-site {
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+.link-site:hover {
+    opacity: 0.6;
+}
